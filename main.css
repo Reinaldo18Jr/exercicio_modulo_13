@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(27, 68, 145);
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(212, 192, 75);
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item-next {
+    transition: transform 0s ease-in-out;
+}
+
+.carousel-item-prev {
+    transition: transform 0s ease-in-out;
+}
+
+.carousel-item-left {
+    transform: translateX(-100%);  
+}
+
+.carousel-item-right {
+    transform: translateX(100%);
+}
+
+.carousel-caption:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.carousel-caption h2 {
+    color: #fff;
+}
