@@ -8,6 +8,27 @@
     margin: 0 auto;
 }
 
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho nav li {
+    list-style: none;
+}
+
+.cabecalho nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+}
+
+.cabecalho nav li a:hover {
+    color:black;
+}
+
 header {
     background-color: rgb(27, 68, 145);
 }
@@ -20,24 +41,14 @@ header h1 {
 }
 
 .carousel {
+    margin-top: 15px;
+}
+
+.carousel,
+section h2,
+.nav-tabs {
     display: flex;
     justify-content: center;
-}
-
-.carousel-item-next {
-    transition: transform 0s ease-in-out;
-}
-
-.carousel-item-prev {
-    transition: transform 0s ease-in-out;
-}
-
-.carousel-item-left {
-    transform: translateX(-100%);  
-}
-
-.carousel-item-right {
-    transform: translateX(100%);
 }
 
 .carousel-caption:after {
@@ -52,4 +63,56 @@ header h1 {
 
 .carousel-caption h2 {
     color: #fff;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+section h2 {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.nav-tabs button {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .carousel img {
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .carousel img {
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
